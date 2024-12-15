@@ -1,0 +1,192 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+html::-webkit-scrollbar {
+  width: 8px !important;
+}
+html::-webkit-scrollbar-thumb {
+  background: linear-gradient(transparent, #8b8a8a);
+  border-radius: 20px;
+}
+
+#scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.activehome1 {
+  color: #E1A123;
+}
+@media screen and (min-width: 478px) {
+  .container {
+    max-width: 1350px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media screen and (max-width: 478px) {
+  .container {
+    max-width: 1350px;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+.rota1 {
+  transform: rotate(-225deg);
+  top: 5px;
+}
+
+.rota11 {
+  transform: rotate(0);
+  top: 0px;
+}
+
+.rota2 {
+  transform: rotate(225deg);
+  top: -5px;
+}
+
+.rota22 {
+  transform: rotate(0);
+  top: 0;
+}
+
+.hightmun {
+  animation: hightmun 0.5s linear forwards;
+}
+
+.hightmun2 {
+  animation: hightmun2 0.5s linear forwards;
+}
+
+@keyframes hightmun {
+  from {
+    height: 0%;
+  }
+
+  to {
+    height: 300%;
+  }
+}
+
+@keyframes hightmun2 {
+  from {
+    height: 300%;
+  }
+
+  to {
+    height: 0;
+  }
+}
+
+.hide12 {
+  animation: bgop 0.7s linear forwards;
+}
+
+@keyframes bgop {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0.4;
+  }
+}
+
+.hidere {
+  animation: bgopre 0.5s linear forwards;
+}
+
+@keyframes bgopre {
+  0% {
+    opacity: 0.4;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.show12 {
+  animation: tranlslate 0.7s linear forwards;
+}
+
+@keyframes tranlslate {
+  0% {
+    transform: translateY(-20%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.showre {
+  animation: tranlslatere 0.7s linear forwards;
+}
+
+@keyframes tranlslatere {
+  0% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+
+  100% {
+    transform: translateY(20%);
+    opacity: 0;
+  }
+}
+
+.anim12 {
+  animation: anim12 0.5s linear forwards;
+}
+
+@keyframes anim12 {
+  0% {
+    opacity: 0;
+    transform: rotate3d(25, 41, 7, -90deg);
+  }
+
+  100% {
+    opacity: 1;
+    transform: rotate3d(0, 0, 0, 0);
+  }
+}
+
+.imgehove:hover .alldivhover {
+  display: flex;
+}
+
+.imgehove:hover img {
+  border-radius: 50% 0 0 0;
+}
+
+.watshov:hover div {
+  display: block;
+}
+
+.divhover:hover a {
+  display: block;
+}
+
+.divhover:hover .pat {
+  fill: white;
+}
+
+.divhover:hover .bghover {
+  background-color: #39708fe0;
+}
